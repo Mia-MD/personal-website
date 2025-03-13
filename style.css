@@ -362,6 +362,10 @@ a{
 
     }
 
+    .languages .title-experience h2{
+        font-size: 14vw;
+    }
+
     .repeat{
         height:12vw;
         position:relative;
