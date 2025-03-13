@@ -1,0 +1,417 @@
+body{
+    background-color: #fff9ef;
+    padding: 0;
+    margin:0;
+}
+
+.header, .projects, .resume{
+    
+    background-color: #257180;
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 5%;
+}
+
+.header{
+    padding-bottom: 5%;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.hero-para{
+    font-size: 1.2rem;
+    width:60%;
+    line-height: 1.8;
+}
+
+.resume{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 0.5fr 1.5fr;
+    column-gap: 2rem;
+    
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.title{
+    grid-column: span 3;
+   
+}
+
+.skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 5%;
+}
+
+.yellow-text{
+    color:#ffdd86;
+}
+
+.orange-text{
+    color:#fd8b51;
+}
+
+.white-text{
+    color:#fff9ef;
+}
+
+.blue-text{
+    color:#257180;
+}
+
+.hollow{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3.5px;
+    -webkit-text-stroke-color: #f2e5bf;
+
+}
+
+.hollow-orange{
+    -webkit-text-stroke-color: #fd8b51;
+}
+
+.hollow-blue{
+    -webkit-text-stroke-color: #257180;
+}
+
+.repeat{
+    height:4.5rem;
+    position: relative;
+    top:-2.7rem;
+}
+
+h1, h2,h3{
+    font-family: "Libre Franklin", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+.repeat-portfolio{
+    height:6rem;
+    position: relative;
+    top:-3.7rem;
+}
+
+h4{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.year{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #ffdd86;
+    font-size: 2rem;
+}
+
+.year-blue{
+    -webkit-text-stroke-color: #257180;
+}
+
+.title-experience{
+    grid-column: span 2;
+    padding-bottom: 5%;
+}
+
+.experience-text{
+    font-size: 5.5rem;
+    
+}
+
+.experience{
+    padding-top: 5%;
+    background-color: #ffdd86;
+    grid-row: span 2;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 4rem;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+
+p,label, li{
+color: #257180;
+font-family: "Lustria", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.2rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8;
+}
+  
+img{
+    display:inline;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 6px solid #257180;
+}
+
+a{
+    text-decoration: none;
+    color:#f2e5bf;
+}
+
+.about-me{
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 5%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.title-hobbies{
+    grid-column: span 5;
+    padding-bottom: 5%;
+}
+
+.contact{
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    
+}
+
+.languages{
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    column-gap: 7rem;
+}
+
+.blue-bg{
+    background-color: #257180;
+    border-radius: 20px;
+    width:max-content;
+    height: fit-content;
+}
+
+.blue-box{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 5%;
+    grid-template-columns: auto;
+    padding-left:10%;
+    padding-top: 5%;
+}
+
+.hobbies-text{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width:1400px){
+    .resume{
+        padding-left: 5%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .experience{
+        order:1;
+    }
+
+    .languages .title-experience h2{
+        font-size: 4rem;
+    }
+
+    img{
+        width:60%;
+    }
+
+}
+
+@media(max-width:960px){
+    h1{
+        font-size: 7.5rem;
+    }
+    .header, .projects, .resume, .about-me,.hero, .skills,.contact{
+        padding-left: 3%;
+    }
+
+    .contact{
+        padding-left: 5%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .repeat-portfolio{
+        height:6.0rem;
+        position: relative;
+        top:-3.7rem;
+    }
+
+    .repeat{
+        height:4.4rem;
+        position: relative;
+        top:-2.7rem;
+    }
+
+    .contact .title-experience h2{
+        top:-0.2rem;
+        height:4.8rem;
+    }
+}
+
+@media(max-width:768px){
+    .header, .projects, .resume, .about-me,.hero, .skills,.contact{
+        padding-left: 5%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    h1,h2{
+        font-size:5.5rem;
+    }
+
+    .title-experience > h2{
+        font-size: 5rem;
+    }
+
+    .experience{
+        order:1;
+    }
+    
+    img{
+        width:170px;
+    }
+
+    .profile-pic{
+        width:50vw;
+    }
+
+    .repeat-portfolio{
+        height:3.9rem;
+        position: relative;
+        top:-2.4rem;
+    }
+
+    .repeat{
+        height:3.9rem;
+        position: relative;
+        top:-2.3rem;
+    }
+}
+
+@media(max-width:576px){
+    h1,h2{
+        font-size: 15vw;
+    }
+
+    .title-experience > h2{
+        font-size: 12vw;
+    }
+
+    .profile-pic{
+        width:80vw;
+    }
+
+    .repeat-portfolio{
+        height:15vw;
+        position: relative;
+        top:-4vw;
+
+    }
+
+    .repeat{
+        height:12vw;
+        position:relative;
+        top:-6vw;
+    }
+
+    img{
+        width:150px;
+    }
+
+    .blue-box{
+        width:min-content;
+        padding-left: 1%;
+    }
+
+}
+
+@media(max-width:360px){
+
+    h1,h2{
+        font-size: 3.2rem;
+    }
+
+    .title-experience > h2{
+        font-size: 2.8rem;
+    }
+
+    img{
+        width:100px;
+    }
+
+    .blue-box{
+        width:min-content;
+        padding-left: 1%;
+    }
+
+    .languages{
+        column-gap: 0;
+    }
+
+    .experience{
+        column-gap: 0;
+        
+    }
+
+    .resume .title h2, .header h1{
+        font-size: 15vw;
+    }
+
+    .title-experience h2, .languages .title-experience h2{
+        font-size: 12vw;
+    }
+}
